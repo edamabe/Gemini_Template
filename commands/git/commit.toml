@@ -1,0 +1,17 @@
+# 呼び出し方: /git:commit
+description = "ステージングされた変更に基づいてGitのコミットメッセージを生成します。"
+prompt = """
+以下のgit diffに基づいて、Conventional Commits規約に準拠したコミットメッセージを生成してください。
+
+フォーマット:
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+
+diff:
+```diff
+!{git diff --staged}
+```
+"""
