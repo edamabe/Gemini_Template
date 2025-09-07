@@ -2,5 +2,8 @@
   "theme": "Default",
   "selectedAuthType": "oauth-personal",
   "hasSeenIdeIntegrationNudge": true,
-  "ideMode": true
+  "ideMode": true,
+  "customCommands": [
+    "commands"
+  ]
 }
