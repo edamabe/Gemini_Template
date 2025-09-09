@@ -9,29 +9,35 @@
   "mcpServers": {
     "gitmcp": {
       "url": "https://gitmcp.io/{owner}/{repo}"
-    }
-  },
-  "mcpServers": {
+    },
     "context7": {
       "httpUrl": "https://mcp.context7.com/mcp",
       "headers": {
         "CONTEXT7_API_KEY": "YOUR_API_KEY",
         "Accept": "application/json, text/event-stream"
       }
-    }
-  },
-  "mcpServers": {
+    },
     "fastapi-mcp": {
       "url": "http://localhost:8000/mcp"
-    }
-  },
-  "mcpServers": {
+    },
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"],
       "env": {
         "DISPLAY": ":1"
       }
+    },
+    "serena": {
+      "displayName": "Serena Coding Agent",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory", "C:/Users/yuusa/dev/serena",
+        "serena-mcp-server",
+        "--context", "ide-assistant",
+        "--enable-web-dashboard", "false",
+        "--project", "$(pwd)"
+        ]
     }
   }
 }
